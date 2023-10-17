@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+
+body{
+background-color: aqua;
+font-family: 'Comic Neue', cursive;
+}
+
+.font{
+  padding-left: 40px;
+  font-size: larger;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: #8f8ee0;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: auto;
+  margin-top: 0px;
+}
+
+h2{
+  border: 5px solid grey;
+  background-color: lightgrey;
+  text-align: left;
+  padding-left: 50px;
+}
+
+
+.firstquby {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  padding: 50px 50px 50px 50px;
+}
+
+.secondquby{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  padding: 50px 50px 50px 50px;
+}
+
+table, th, td {
+  justify-content: center;
+  align-items: center;
+  border: 5px solid;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
