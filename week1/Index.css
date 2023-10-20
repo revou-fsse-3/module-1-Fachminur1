@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
 
 
-section{
-  margin: 0 10px 50px ;
-
-}
-
 body{
 background-color: aqua;
 font-family: 'Comic Neue', cursive;
@@ -17,9 +12,11 @@ font{
   font-size: larger;
 }
 
-h1.title{
-  background-color: green;
+h1{
+  background-color: black;
+
 }
+
 
 h2{
   border: 5px solid grey;
