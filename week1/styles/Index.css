@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+
+section{
+  margin: 0 10px 50px ;
+
+}
+
+body{
+background-color: aqua;
+font-family: 'Comic Neue', cursive;
+margin: 0 0 50px ;
+}
+
+font{
+  padding-left: 40px;
+  font-size: larger;
+}
+
+h1 {
+  background-image: url(qubygif.gif) ;
+  background-position: bottom;
+  background-color: rgb(76, 175, 214);
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin: 0;
+}
+
+h2{
+  border: 5px solid grey;
+  background-color: lightgrey;
+  text-align: left;
+  padding-left: 50px;
+}
+
+
+.firstquby {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  padding: 50px;
+}
+
+.secondquby{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  padding: 50px ;
+}
+
+table, th, td {
+  justify-content: center;
+  align-items: center;
+  border: 5px solid;
+  margin:auto;
+}
+
+button{
+  position: relative;
+  display: flex;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.checkbox {
+width: 300px;
+margin: 0 auto;
+border: 5px solid black;
+padding: 10px 10px 10px 10px;
+}
+
+.textarea {
+  display: flex;
+  justify-content: center;
+}
+
+
+.input-wrapper{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.input-wrapper input{
+  order:-1;
+  margin-right: 10px;
+}
+
+.input-label{
+  width: 120px;
+  margin: 0 auto;
+}
