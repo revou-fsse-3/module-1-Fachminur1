@@ -1,102 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
 
-
-body{
-background-color: aqua;
-font-family: 'Comic Neue', cursive;
-margin: 0 0 50px ;
+body {
+    margin: 0;
+    font-family:'Comic Neue', cursive;
 }
 
-font{
-  padding-left: 40px;
-  font-size: larger;
+.navigationbar {
+    background: rgb(70,65,145);
+    background: linear-gradient(90deg, rgba(70,65,145,1) 21%, rgba(161,160,209,1) 48%, rgba(198,198,235,1) 68%, rgba(86,160,175,1) 89%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
 }
 
-h1{
-  background-color: black;
-
+.lefttnavigationbar {
+    display: flex;
+    column-gap: 5px;
 }
 
-
-h2{
-  border: 5px solid grey;
-  background-color: lightgrey;
-  text-align: left;
-  padding-left: 50px;
+.leftnavigationbar a, .rightnavigationbar a {
+    padding: 10px;  
+    background-color: #333;
+    text-decoration: underline;
+    color: white;
+    
 }
 
-
-.firstquby {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: auto;
-  padding: 50px;
-}
-
-.secondquby{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: auto;
-  padding: 50px ;
-}
-
-table, th, td {
-  justify-content: center;
-  align-items: center;
-  border: 5px solid;
-  margin:auto;
-}
-
-button{
-  position: relative;
-  display: flex;
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-form {
-  width: 300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.leftnavigationbar a:hover{
+    background-color: grey;
+    cursor: pointer;
 }
 
 
-.checkbox {
-width: 300px;
-margin: 0 auto;
-border: 5px solid black;
-padding: 10px 10px 10px 10px;
+.rightnavigationbar a:hover {
+    background-color: grey;
+    cursor: pointer;
+}   
+
+
+
+header {
+    margin-top: 55px;
 }
 
-.textarea {
-  display: flex;
-  justify-content: center;
+main {
+    background-color: #b1c4cc ;
+    padding-top: 20px;
 }
 
-
-.input-wrapper{
-  display: flex;
-  justify-content: flex-start;
+.images {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 100px;
 }
 
-.input-wrapper input{
-  order:-1;
-  margin-right: 10px;
+.images:hover {
+    cursor: pointer;
 }
 
-.input-label{
-  width: 120px;
-  margin: 0 auto;
+button {
+    margin-left: 48%;
+}
+
+h2 {
+    margin: auto;
+    padding-top: 10px;
+}
+
+.information{
+    background-color: rgb(174, 179, 184);
+    margin-top: 0;
+}
+
+footer {
+    background-color: rgb(174, 179, 184);
+    margin-top: 0;
+}
+
+fieldset {
+    padding-left: 50%;
+    padding-right: 50%;
+    align-items: center;
+    padding: 8px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./assets/mountainnavigationbar.jpg);
+}
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(174, 179, 184);
+    margin-top: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-sc {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-tp {
+    width: 100px;
+    height: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+    .icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .leftnavigationbar, .rightnavigationbar {
+        display: none;
+    }
 }

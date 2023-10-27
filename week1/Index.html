@@ -1,171 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quby World</title>
-        <link rel="stylesheet" href="./styles/index.css">
-        <link rel="icon" type="image" href="./assets/qubyicon.jpeg">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderful world</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image" href="./assets/qubyicon.jpeg">
+</head>
+<!-- Ini dasar web -->
 
-        <h1 style="background-image: url(qubygif.gif);"> 
-            Welcome to the world of Quby!
-        </h1> 
 
-    <body>
+<body>
         
-          
-        <section>
-                <div class="firstquby">
-                    <img width="300px" src="./assets/quby1.jpeg">
-                    <img width="300px" src="./assets/quby2.jpeg">
-                    <img width="300px" src="./assets/quby3.jpeg">
-                </div>
-
-                <div class="secondquby">
-                    <img width="300px" src="./assets/quby4.jpeg">
-                    <img width="300px" src="./assets/quby5.jpg">
-                    <img width="300px" src="./assets/qubyhair.jpg">
-                </div>
-        </section>
-        <section>
-            <h2>
-                Who is Quby?
-            </h2>
-                <p class="font">
-                    "Characterised by its rosy cheeks, abnormally huge head, and stick-like limbs, Quby (also known as Pentol) was created by Zhong Chaoneng in 2015 for the popular instant messaging platform WeChat. The first sticker pack was so successful that Zhong left his day job to become a full-time sticker designer."
-                </p>
-
-            <h2>
-            Is quby Famous?
-            </h2>
-                <p class="font">
-                    "Of course people knows about Quby. Altough most of the people already recognized quby's adorable face and emotion, they often use quby as sticker in social media."
-                </p>
-
-            <h2>
-            What does Quby do?
-            </h2>
-                <p class="font">
-                    "Quby will help you removing your stress by his adorable face. Quby also capable of being your friend. Sometimes Quby could make you smile and make your day better. It is recommended for you to have quby anywhere you go."
-                </p>
-
-             <h2>
-                Where can I find Quby?
-            </h2>
-                <p class="font">
-                    "You can find quby almost everywhere! As long as you have your smartphone, you can always see quby's life. Some people bought Quby's sticker too and place it on their belongings. Even some people also decorate their room full with Quby. You dont have to be worry about Quby. Quby will always be there in your heart." 
-                </p>
-
-
-        </section>
-
-
-        <section>
-            <h2>
-                Here are some of Quby's videos you can watch
-            </h2>
+        <!-- Awal dari header -->
         
-        <table>
-            <tr>
-              <th>Best of Quby's Videos</th>
-              <th>Link</th>
-              <th>Decription</th>
-            </tr>
-            <tr>
-              <td>Quby's Childhood</td>
-              <td><a href="https://www.instagram.com/reel/Cs7ykqMObE8/">Quby's Childhood</a> </td>
-              <td>Quby seeing a burgershop and remembering about Quby's past </td>
-            </tr>
-            <tr>
-              <td>Quby's Pet</td>
-              <td><a href="https://www.instagram.com/reel/CuG-NCJuiKJ/">Quby's Pet </a> </td>
-              <td>Quby who just came from work exhausted and tired. Suddenly got his mood pumped up again after seeing his pet.</td>
-            </tr>
-            <tr>
-                <td>Quby's weekly state</td>
-                <td><a href="https://www.instagram.com/reel/CrXsVWtL-XQ/">Quby's weekly state </a> </td>
-                <td>Shows Quby's mood for one week. Can you relate yourself with Quby?</td>
-              </tr>
-          </table>
-        </section>
-        
-        <h1 style="background-image: url(qubygif.gif);"> 
-            NOW ITS TIME FOR QUBY QUIZ!
-        </h1>
-
-        <h2 style="text-align: center;">
-            Here you can find what Quby you are. You just need to choose 1 among these option
-        </h2>
-            
-            <button onclick="button1()" type="button">I am always happy, cheering, and easy going on anyone! </button>
-            <button onclick="button2()" type="button">I am a worker. I love working hard and doing overtime! </button>
-            <button onclick="button3()"type="button">I love food. I always love to cook too! Food is everything! </button>
-            <button onclick="button4()"type="button">I am lazy. I hate to do literally anything! I love to Lay down! </button>
-
-            <h2 style="text-align: center;">
-                So, do you like Quby now? Join us at Quby fanclub!
-            </h2>
-
-
-            <form>
-                <label for="fname">First Name:</label>
-                <input tpye="text" id="fname">
-                <label for="lname">Last Name:</label>
-                <input tpye="text" id="lname">
-            </form>
-
-            <div class="checkbox">
-                <p style="text-align: center;">What do you see in Quby?</p>
+        <!-- awal dari bagian navigasi paling atas -->
+        <nav class="navigationbar">
+            <img class="icon" style="width: 30px; height: 30px;" src="./assets/hamburger.png">
+            <div class="leftnavigationbar">
+                <a onclick="home()">Home</a>
+                <a onclick="journey()">Journey</a>
+                <a onclick="community()">Community</a>
                 
-
-            <div class="input-label">
-                <div class="input-wrapper">
-                    <label for="adorable">adorable</label>
-                    <input
-                        id="adorable"
-                        type="checkbox"
-                        name="personality"
-                        value="adorable"
-                    />
-                </div>
-
-                <div class="input-wrapper">
-                    <label for="fascinating">fascinating</label>
-                    <input
-                        id="fascinating"
-                        type="checkbox"
-                        name="personality"
-                        value="fascinating"
-                    />
-                </div>
-
-                <div class="input-wrapper">
-                    <label for="lovable">lovable</label>
-                    <input
-                        id="lovable"
-                        type="checkbox"
-                        name="personality"
-                        value="lovable"
-                    />
-                </div>
-
             </div>
+            <div class="rightnavigationbar">
+                <a>Join us</a>
+                <a>Log in</a>
+                <a>About us</a>
                 
+            </div>
+            
+        </nav>
+        <!-- akhir dari bagian navigasi paling atas -->
+            <header>
+                <h1 style="text-align: center;">Wonderful world group</h1>
+                <p style="text-align: center;">This year we found 5 places that caught our attention. Here are the 5 list</p>
+        
+            </header>
+        <!-- Akhir dari header -->
 
-                
-                
-               
+        <!-- Awal dari Konten Utama -->
+        <main>
+            <div class="images">
+                    <p onclick="moraine_lake()" style="text-align: center;">1. Moraine Lake</p>
+                <img width="100%" height="35%" src="./assets/morainelake.jpg" alt="">
+                    <p onclick="salar_de_uyuni()" style="text-align: center;">2. Salar de Uyuni</p>
+                <img width="100%" height="35%" src="./assets/salardeuyuni.jpg" alt="">
+                    <p onclick="santorini_island()" style="text-align: center;">3. Santorini Island</p>
+                <img width="100%" height="50%" src="./assets/santoriniisland.jpg" alt="">
+                    <p onclick="angkor_wat()" style="text-align: center;">4. Angkor Wat</p>
+                <img width="100%" height="35%" src="./assets/angkorwat.jpg" alt="">
+                    <p onclick="great_barrier_reef()" style="text-align: center;">5. Great Barrier Reef</p>
+                <img width="100%" height="35%" src="./assets/greatbarrierreef.jpg" alt="">
+            </div>
 
-                
-                
-                <button type="submit">Submit your response in here!</button>
-              </div>
+            <div class="information">
+                <h2 style="text-align: center;">We can provide you information about those places and how to get there</h2>
+                <fieldset>
+                    <legend>Personal information:</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Places to go:</legend>
+                    <label for="places">Select one of the places</label>
+                            <select>
+                                <option label="Moraine lake">Moraine Lake</option>
+                                <option label="Salar de Uyuni">Salar de Uyuni</option>
+                                <option label="Santorini Island">Santorini Island</option>
+                                <option label="Angkor Wat">Angkor Wat</option>
+                                <option label="Great Barrier Reef">Great Barrier Reef</option><br><br>
+                            </select><br><br>
+                    <label for="Departure">Departure:</label>
+                                <input type="date"><br><br>
+                    <label for="places">Modes of transportation</label>
+                            <select>
+                                <option label="Air">Air</option>
+                                <option label="Water">Water</option>
+                            </select><br><br>
+                            <button>Submit</button>
+                </fieldset>
+            </div>     
+        </main>
+        <!-- Akhir dari konten utama -->
 
-              
+
+        <!-- awal dari footer -->
+        <div class="foot">
+            <p>visit us</p>
+            <p>Our travel Partners</p>
+        </div>
+
+        <footer>
+                 <div class="icon-container">
+                    <img class="icon-sc" src="./assets/instagram.png" alt="instagram">
+                    <img class="icon-sc" src="./assets/facebook.png" alt="facebook">
+                    <img class="icon-sc" src="./assets/telegram.png" alt="telegram">
+                    <img class="icon-sc" src="./assets/twitter.png" alt="twitter">
+                    <img class="icon-sc" src="./assets/linkedin.png" alt="linkedin">
+                 </div>
+                 <div class="icon-container2">
+                    <img class="icon-tp" src="./assets/bookingholdings.png" alt="bookingholdings">
+                    <img class="icon-tp" src="./assets/expedia.png" alt="expedia">
+                    <img class="icon-tp" src="./assets/traveloka.png" alt="">
+                 </div>
+        </footer>
+        <!-- akhir dari footer -->
+
+<script src="index.js"></script>
 
 
 
-            <script src="./script/index.js">  </script>
-        </body>
+    
+</body>
 </html>
